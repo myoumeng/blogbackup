@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="685px" height="685px" viewBox="0 0 685 685" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>M</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#FA2C38" offset="0%"></stop>
+            <stop stop-color="#FF2E63" stop-opacity="0.5" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-2" fill="url(#radialGradient-1)" cx="342" cy="343" r="342"></circle>
+        <text id="M" font-family="LucidaGrande, Lucida Grande" font-size="576" font-weight="normal" fill="#FFFFFF">
+            <tspan x="94.4375" y="563">M</tspan>
+        </text>
+    </g>
+</svg>

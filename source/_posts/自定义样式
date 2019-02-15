@@ -1,0 +1,165 @@
+// Custom styles.
+
+//首页；全局；背景图片
+body > div
+{
+background: url(http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg) fixed
+//https://ws1.sinaimg.cn/large/006tNc79gy1fzraf52mhoj311y0lcwq6.jpg
+//https://ws1.sinaimg.cn/large/006tNc79gy1fzr7lv518ij311y0lcwig.jpg
+
+center no-repeat;
+background-size: cover;
+}
+//首页文章；全局；背景
+
+#posts > article .post-block {
+    margin-top: 50px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.98);
+    padding: 45px 36px 36px 36px;
+}
+
+
+//全局；选择文本后变色
+::selection {
+    background: #fd03b2;
+    color: #fff;
+}
+
+//小黄人：https://ws1.sinaimg.cn/large/006tNc79gy1fzrbkd6w76j30u00u07kv.jpg
+//美女：https://ws2.sinaimg.cn/large/006tNc79gy1fzrbow28q8j30u00u00yz.jpg
+//星空2：http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg
+//星空1：http://img.netbian.com/file/2018/1109/18e76135e89d3aa1b5e1cf6b165fae23.jpg
+
+
+//阅读全文按钮;默认状态
+.btn {
+    display: inline-block;
+    padding: 5px 32px;
+    font-size: 20px;
+    color: #252a34;
+    background: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    line-height: 2;
+    box-shadow: inset 0 0 10px 0 rgba(0,0,0,.35);
+}
+
+//阅读全文按钮;当鼠标在按钮上时
+.btn:hover {
+    border-color: rgba(255,255,255,0);
+    color: #fff;
+    background: linear-gradient(90deg,#a166ab 0,#ef4e7b 25%,#f37055 50%,#ef4e7b 75%,#a166ab 100%);
+    font-size: 20px;
+    border: none;
+    padding: 5px 32px;
+    box-shadow: inset 0 0 10px 0 rgba(0,0,0,.35);
+}
+
+//页脚；每个页面最底部
+.footer {
+    font-size: 14px;
+    line-height: 1.75;
+    background-color: rgba(255,255,255,.75);
+    color: #333;
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: #A8D8EA;
+    box-shadow: 0 -10px 10px 0 rgba(0,0,0,.15);
+}
+
+//归档页面；文章时间右边
+#posts time
+.posts-collapse .post-meta {
+    position: absolute;
+    font-size: 14px;
+    right: 24px;
+    top: 22px;
+}
+//归档页面；文章标题
+.posts-collapse .post-title span:hover {
+    color: #ff2e63;
+}
+.posts-collapse .post-title a, .posts-collapse .post-title span.exturl {
+    color: #673AB7;
+    border: none;
+}
+
+
+//归档页面；文章标题前小圆点
+.posts-collapse .post-header::before {
+    content: " ";
+    position: absolute;
+    left: 40px;
+    top: 34px;
+    width: 8px;
+    height: 8px;
+    margin-left: 0px;
+    background: #9E9E9E;
+    border-radius: 100%;
+    border: 0px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: background;
+}
+
+//页面底部页码
+.pagination {
+    margin: 120px 0 40px;
+    text-align: center;
+    border-top: 0px solid #eee;
+    margin: 0px;
+    padding: 0px 0px 20px;
+    border: 0px;
+    border-top: 0px;
+    /* border-radius: 20px; */
+}
+.pagination .page-number.current, .pagination .page-number {
+    background: rgba(234, 234, 234, 0.9);
+    border-top-color: transparent;
+    border-radius: 40px;
+    font-size: 20px;
+    padding: 5px 20px;
+    font-weight: 900;
+}
+.pagination .page-number.current{
+  color: #ff2e63;
+
+}
+.pagination .page-number {
+    color: #673ab7;
+}
+
+
+i.fa.fa-angle-right, i.fa.fa-angle-left {
+    font-size: 25px;
+    background: #eaeaea;
+    border-bottom: 0px solid transparent;
+    border-radius: 5px;
+    padding: 12px 22px;
+    color: #673ab7;
+}
+i.fa.fa-angle-right:hover, i.fa.fa-angle-left:hover
+{
+    color: #ff2e63;
+}
+.pagination .prev, .pagination .next {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    margin: 0 10px;
+    padding: 0px 0px;
+    border-bottom: 0px;
+}
+
+.pagination .prev:hover, .pagination .next:hover, .pagination .page-number:hover {
+    border-top: 0px transparent;
+    color: #ff2e63;
+}
