@@ -112,8 +112,9 @@ aplayer:
 
 backup:
     type: git
+    theme: next
     repository:
-       github: git@github.com:/myoumeng/blogbackup.git,ou
+       github: git@github.com:https://github.com/myoumeng/blogbackup,ou
        gitcafe: git@github.com:/myoumeng/blogbackup.git,ou
 
 # https://github.com/bubkoo/hexo-toc
