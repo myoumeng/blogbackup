@@ -15,15 +15,35 @@ search:
     path: search.xml
     field: post
     format: html
-    limit: 10000
+    limit: 0
 
+markdown_it_plus:
+    highlight: true
+    html: true
+    xhtmlOut: true
+    breaks: true
+    langPrefix:
+    linkify: true
+    typographer:
+    quotes: “”‘’
+    pre_class: highlight
 
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+  modifyAnchors: ''
+  autolink: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://myoumeng.github.io
+url: http://yoursite.com
 root: /
-permalink: post/:abbrlink/
+permalink: post/:abbrlink.html
 permalink_defaults:
   abbrlink:
   alg: crc32 # 算法：crc16(default) and crc32
@@ -94,6 +114,14 @@ deploy:
   repo: https://github.com/myoumeng/myoumeng.github.io.git
   branch: master
 
+
+backup:
+    type: git
+    theme: next
+    repository:
+       github: git@github.com:/myoumeng/myoumeng.github.io.git,hexo
+       gitcafe: git@github.com:/myoumeng/myoumeng.github.io.git,hexo
+
 feed:
   type: atom
   path: atom.xml
@@ -107,43 +135,3 @@ feed:
 
 aplayer:
   meting: true
-  asset_inject: false
-
-
-backup:
-    type: git
-    theme: next
-    repository:
-       github: https://github.com/myoumeng/blogbackup,ou
-       gitcafe: git@github.com:/myoumeng/blogbackup.git,ou
-
-# https://github.com/bubkoo/hexo-toc
-
-# Markdown-it config
-## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
-html: true
-breaks: true
-linkify: true
-
-# Markdown-it config
-## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-abbr
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
-  anchors:
-    level: 2
-    collisionSuffix: 'v'
-    permalink: true
-    permalinkClass: header-anchor
-    permalinkSymbol: ¶

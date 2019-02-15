@@ -363,7 +363,7 @@ reward:
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
   enable: true
-  title:  # custom header, leave empty to use the default one
+  title: 欢迎阅读相关文章哦 # custom header, leave empty to use the default one
   display_in_home: false
   params:
     maxCount: 8
@@ -569,7 +569,7 @@ valine:
   app_id: Q15z7u38rTd35u8JVNxW8aR1-gzGzoHsz
   app_key: GCYOgHw2hfysPvXPwn7f2gJH
   notify: true # mail notifier, See: https://github.com/xCss/Valine/wiki
-  verify: true # Verification code
+  verify: false # Verification code
   placeholder: 目前支持留言了哟！还可以留下你的联系方式呢，要是有回复就可以及时通知你啦 # comment box placeholder
   avatar: wavatar # gravatar style
   guest_info: nick,mail,link # custom comment header
